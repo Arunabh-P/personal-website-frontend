@@ -55,6 +55,6 @@ describe('Timeline Component', () => {
 
     const timeline = screen.getByRole('list');
     expect(timeline).toBeInTheDocument();
-    expect(timeline).toHaveClass('relative border-s border-primary');
+    expect(timeline).toHaveClass('relative border-s border-black');
   });
 });
