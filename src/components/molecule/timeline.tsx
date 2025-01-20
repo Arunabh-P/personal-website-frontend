@@ -12,10 +12,10 @@ interface TimelineProps {
   data: Data[];
 }
 const Timeline: FC<TimelineProps> = ({ data }) => (
-  <ol className="relative border-s border-primary ">
+  <ol className="relative border-s border-black ">
     {data.map((item, index) => (
       <li key={index} className="mb-5 ms-6">
-        <span className="absolute flex items-center justify-center w-6 h-6 bg-white border-white rounded-full border-[.5px]  -start-3 ring-8 ring-white">
+        <span className="absolute flex items-center justify-center w-6 h-6 bg-primary border-primary rounded-full border-[.5px]  -start-3 ring-8 ring-primary">
           <Image
             src={
               item.isWork
@@ -28,13 +28,12 @@ const Timeline: FC<TimelineProps> = ({ data }) => (
             priority
           />
         </span>
-        <h6 className="font-medium flex items-center mb-1 ">
-          {item.position}
-          <span className="bg-secondary text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ms-3">
-            {item.startYear} - {item.endYear}
-          </span>
-        </h6>
-        <p className="block mb-2  font-normal">{item.company}</p>
+        <h6 className="font-medium flex items-center mb-1 ">{item.position}</h6>
+        <p className="block  font-normal">{item.company}</p>
+        <p className="block mb-2  font-normal">
+          {item.startYear} - {item.endYear}
+        </p>
+
         <p className="font-normal text-justify">{item.description}</p>
       </li>
     ))}

@@ -3,9 +3,9 @@ import { timelineData } from '@/constants/home/timeline';
 import React from 'react';
 
 const SummaryTemplate = () => (
-  <div className="md:flex section-padding pt-0 md:top-0 md:h-screen md:overflow-auto md:no-scrollbar md:gap-10">
+  <div className="md:flex section-padding pt-0  md:h-screen md:overflow-auto md:no-scrollbar md:gap-10">
     <div className="md:w-6/12  md:sticky md:top-0 md:pt-5 min-h-fit max-h-fit">
-      <h2 className="font-lora pb-4 font-medium text-secondary">
+      <h2 className="font-lora pb-4 font-medium">
         PROFESSIONAL <br /> SUMMARY
       </h2>
       <p className="font-normal text-justify">
