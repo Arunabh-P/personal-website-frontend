@@ -1,16 +1,12 @@
+/* eslint-disable new-cap */
 import type { Metadata } from 'next';
-import { Lora, Roboto } from 'next/font/google';
+import { Roboto } from 'next/font/google';
 import './globals.css';
+import '../../styles/typography.css';
 import ProvidersWrapper from '../provider';
 import { WebVitals } from '../../../reportWebVitals';
 
-const lora = Lora({
-  subsets: ['latin'],
-  weight: ['400', '700'],
-  variable: '--font-lora',
-});
-
-export const roboto = Roboto({
+const roboto = Roboto({
   subsets: ['latin'],
   weight: ['400', '700'],
   variable: '--font-roboto',
@@ -27,8 +23,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html className={`${lora.variable}`}>
-      <body suppressHydrationWarning className={`${lora.variable} antialiased`}>
+    <html className={`${roboto.variable}`}>
+      <body
+        suppressHydrationWarning
+        className={`${roboto.variable} antialiased`}
+      >
         <WebVitals />
         <ProvidersWrapper>{children}</ProvidersWrapper>
       </body>

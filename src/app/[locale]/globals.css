@@ -2,19 +2,114 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   color: var(--foreground);
   background: var(--background);
+}
+
+@layer base {
+  :root {
+    --font-roboto: 'Roboto', sans-serif;
+    --font-lora: 'Lora', serif;
+
+    --background: #ffff;
+    --foreground: #1a051d;
+
+    --primary: #eae7dc;
+    --primary-light: #eae7dc;
+    --primary-dark: #eae7dc;
+
+    --secondary: #0a6453;
+    --secondary-light: #0a6453;
+    --secondary-dark: #0a6453;
+
+    --success: #0f2b31;
+    --success-light: #e7eaea;
+    --success-dark: #050f11;
+
+    --warning: #0f2b31;
+    --warning-light: #e7eaea;
+    --warning-dark: #050f11;
+
+    --error: #0f2b31;
+    --error-light: #e7eaea;
+    --error-dark: #050f11;
+
+    --color-black-50: #000000;
+    --color-black-100: #070707;
+    --color-black-150: #212121;
+    --color-black-200: #252525;
+    --color-black-250: #333333;
+
+    --color-gray-50: #e5e5e5;
+    --color-gray-100: #d4d4d4;
+    --color-gray-150: #cfcfd2;
+    --color-gray-200: #b9b9b9;
+    --color-gray-250: #707070;
+    --color-gray-300: #6c6e70;
+  }
+
+  .dark {
+    --background: #f0f5f1;
+    --foreground: #0a0a0a;
+    --primary: #59bb19;
+    --primary-light: #eafede;
+    --primary-dark: #59bb19;
+    --secondary: #0f2b31;
+    --secondary-light: #e7eaea;
+    --secondary-dark: #050f11;
+
+    --success: #0f2b31;
+    --success-light: #e7eaea;
+    --success-dark: #050f11;
+
+    --warning: #0f2b31;
+    --warning-light: #e7eaea;
+    --warning-dark: #050f11;
+
+    --error: #0f2b31;
+    --error-light: #e7eaea;
+    --error-dark: #050f11;
+
+    --color-black-50: #000000;
+    --color-black-100: #070707;
+    --color-black-150: #212121;
+    --color-black-200: #252525;
+    --color-black-250: #333333;
+  }
+}
+
+@layer utilities {
+  .animate-scroll {
+    display: flex;
+    animation: scroll 10s linear infinite;
+  }
+  .section-padding {
+    @apply p-6 sm:p-12 md:p-16 lg:p-20 xl:p-24 2xl:p-28;
+  }
+  .section-x-padding {
+    @apply px-6 sm:px-12 md:px-16 lg:px-20 xl:px-24 2xl:px-28;
+  }
+  .section-y-padding {
+    @apply py-6 sm:py-12 md:py-16 lg:py-20 xl:py-24 2xl:py-28;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+}
+
+@layer components {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
 }
