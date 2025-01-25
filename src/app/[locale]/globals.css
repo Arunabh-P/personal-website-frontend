@@ -82,16 +82,22 @@ body {
 @layer utilities {
   .animate-scroll {
     display: flex;
-    animation: scroll 10s linear infinite;
+    animation: scroll 25s linear infinite;
   }
   .section-padding {
-    @apply p-6 sm:p-12 md:p-16 lg:p-20 xl:p-24 2xl:p-28;
+    @apply px-[24px] py-[12px] sm:px-[48px]  sm:py-[24px]  md:px-[64px]  md:py-[32px] lg:px-[80px] lg:py-[40px] xl:px-[96px] xl:py-[48px] 2xl:px-[112px] 2xl:py-[66px];
+  }
+  .section-b-padding {
+    @apply pb-[12px] sm:pb-[24px]  md:pb-[32px] lg:pb-[40px] xl:pb-[48px] 2xl:pb-[66px];
+  }
+  .section-b-padding {
+    @apply pt-[12px] sm:pt-[24px]  md:pt-[32px] lg:pt-[40px] xl:pt-[48px] 2xl:pt-[66px];
   }
   .section-x-padding {
-    @apply px-6 sm:px-12 md:px-16 lg:px-20 xl:px-24 2xl:px-28;
+    @apply px-[24px] sm:px-[48px]  md:px-[64px] lg:px-[80px] xl:px-[96px] 2xl:px-[112px];
   }
   .section-y-padding {
-    @apply py-6 sm:py-12 md:py-16 lg:py-20 xl:py-24 2xl:py-28;
+    @apply py-[12px] sm:py-[24px] md:py-[32px] lg:py-[40px] xl:py-[48px] 2xl:py-[66px];
   }
 
   @keyframes scroll {
