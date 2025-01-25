@@ -3,6 +3,7 @@ import DevMotivationTemplate from '@/components/template/home/dev-motivation-tem
 import FooterTemplate from '@/components/template/home/footer';
 import SkillTemplate from '@/components/template/home/skill-template';
 import SummaryTemplate from '@/components/template/home/summary-template';
+import TestimonialTemplate from '@/components/template/home/testimonial-template';
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <SkillTemplate />
       <SummaryTemplate />
       <DevMotivationTemplate />
+      <TestimonialTemplate />
       <FooterTemplate />
     </>
   );

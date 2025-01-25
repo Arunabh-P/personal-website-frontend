@@ -3,7 +3,7 @@ import Timeline from '@/components/molecule/timeline';
 import { timelineData } from '@/constants/home/timeline';
 
 const SummaryTemplate = () => (
-  <div className="md:flex md:h-[900px] md:overflow-auto section-padding no-scrollbar md:items-start">
+  <div className="md:flex md:h-[780px] md:overflow-auto section-x-padding section-t-padding no-scrollbar md:items-start">
     <div className="md:w-6/12 xl:w-5/12 md:sticky md:top-0 md:self-start  ">
       <h2 className="font-lora pb-4 font-medium">
         PROFESSIONAL <br /> SUMMARY
@@ -36,7 +36,7 @@ const SummaryTemplate = () => (
         high-quality web solutions.
       </p>
     </div>
-    <div className="md:w-6/12  xl:w-7/12 md:pl-10">
+    <div className="md:w-6/12  xl:w-7/12 md:pl-10 pt-5">
       <Timeline data={timelineData} />
     </div>
   </div>

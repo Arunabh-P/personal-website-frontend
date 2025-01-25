@@ -2,11 +2,11 @@ import MotivationCard from '@/components/molecule/motivation-card';
 import { devMotivationData } from '@/constants/home/dev-motivation';
 
 const DevMotivationTemplate = () => (
-  <div className="section-x-padding section-b-padding">
+  <div className="section-padding">
     <h2 className="text-start font-lora uppercase pb-4">
       {devMotivationData.title}
     </h2>
-    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-[10px]">
+    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-[30px]">
       {devMotivationData.data.map((item) => (
         <MotivationCard
           index={item.index}

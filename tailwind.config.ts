@@ -52,6 +52,9 @@ export default {
           250: 'var(--color-gray-250)',
           300: 'var(--color-gray-300)',
         },
+        yellow: {
+          50: 'var(--color-yellow-50)',
+        },
       },
       fontFamily: {
         roboto: ['var(--font-roboto)', 'roboto'],
