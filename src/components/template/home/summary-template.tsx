@@ -1,10 +1,10 @@
+import React from 'react';
 import Timeline from '@/components/molecule/timeline';
 import { timelineData } from '@/constants/home/timeline';
-import React from 'react';
 
 const SummaryTemplate = () => (
-  <div className="md:flex section-padding pt-0  md:h-screen md:overflow-auto md:no-scrollbar md:gap-10">
-    <div className="md:w-6/12  md:sticky md:top-0 md:pt-5 min-h-fit max-h-fit">
+  <div className="md:flex md:h-[900px] md:overflow-auto section-padding no-scrollbar md:items-start">
+    <div className="md:w-6/12 xl:w-5/12 md:sticky md:top-0 md:self-start  ">
       <h2 className="font-lora pb-4 font-medium">
         PROFESSIONAL <br /> SUMMARY
       </h2>
@@ -36,7 +36,7 @@ const SummaryTemplate = () => (
         high-quality web solutions.
       </p>
     </div>
-    <div className="md:w-6/12  pt-5 md:pt-10">
+    <div className="md:w-6/12  xl:w-7/12 md:pl-10">
       <Timeline data={timelineData} />
     </div>
   </div>
