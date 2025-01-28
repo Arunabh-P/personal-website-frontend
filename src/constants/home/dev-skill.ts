@@ -1,4 +1,4 @@
-export const devMotivationData = {
+export const devSkillData = {
   title: 'Code Create Conquer',
   data: [
     {

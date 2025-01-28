@@ -1,16 +1,20 @@
-import MotivationCard from '@/components/molecule/motivation-card';
-import { devMotivationData } from '@/constants/home/dev-motivation';
-
-const DevMotivationTemplate = () => (
+import SkillCard from '@/components/molecule/skill-card';
+import { devSkillData } from '@/constants/home/dev-skill';
+import { SkillDto } from '@/types/skill';
+import { FC } from 'react';
+interface DevSkillTemplateDto {
+  data: SkillDto[];
+}
+const DevSkillTemplate: FC<DevSkillTemplateDto> = ({ data }) => (
   <div className="section-padding">
     <h2 className="text-start font-lora uppercase pb-4">
-      {devMotivationData.title}
+      {devSkillData.title}
     </h2>
     <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-[30px]">
-      {devMotivationData.data.map((item) => (
-        <MotivationCard
+      {data.map((item) => (
+        <SkillCard
           index={item.index}
-          title={item.subTitle}
+          title={item.title}
           description={item.description}
           key={item.index}
         />
@@ -19,4 +23,4 @@ const DevMotivationTemplate = () => (
   </div>
 );
 
-export default DevMotivationTemplate;
+export default DevSkillTemplate;

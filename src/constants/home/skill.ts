@@ -72,7 +72,4 @@ export const skills = [
     icon: 'https://res.cloudinary.com/dku0lexry/image/upload/v1737198937/personal-website/skills/redux.svg',
     altText: 'redux',
   },
-  //   { icon: '', altText: '' },
-  //   { icon: '', altText: '' },
-  //   { icon: '', altText: '' },
 ];

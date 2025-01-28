@@ -30,7 +30,7 @@ export const TestimonialCard: FC<TestimonialDto> = ({
           {quote.length > 100 && (
             <span
               onClick={() => setIsExpanded(!isExpanded)}
-              className="text-secondary-dark font-medium"
+              className="text-secondary-dark font-medium cursor-pointer"
             >
               {' '}
               {isExpanded ? 'Show less' : 'See more'}

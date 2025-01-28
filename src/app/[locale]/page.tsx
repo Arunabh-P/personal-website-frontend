@@ -4,16 +4,18 @@ import FooterTemplate from '@/components/template/home/footer';
 import SkillTemplate from '@/components/template/home/skill-template';
 import SummaryTemplate from '@/components/template/home/summary-template';
 import TestimonialTemplate from '@/components/template/home/testimonial-template';
+import { fetchSkills } from '@/service/api/skill';
 import { fetchTestimonials } from '@/service/api/testimonial';
 
 export default async function Home() {
   const { testimonials } = await fetchTestimonials();
+  const { skills } = await fetchSkills();
   return (
     <>
       <BannerTemplate />
       <SkillTemplate />
       <SummaryTemplate />
-      <DevMotivationTemplate />
+      <DevMotivationTemplate data={skills} />
       <TestimonialTemplate data={testimonials} />
       <FooterTemplate />
     </>
