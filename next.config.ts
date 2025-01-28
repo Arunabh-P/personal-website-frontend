@@ -14,6 +14,12 @@ const config: import('next').NextConfig = {
         port: '',
         pathname: '/dku0lexry/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'img.freepik.com',
+        port: '',
+        pathname: '**',
+      },
     ],
   },
 };

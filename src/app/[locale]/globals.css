@@ -12,16 +12,16 @@ body {
     --font-roboto: 'Roboto', sans-serif;
     --font-lora: 'Lora', serif;
 
-    --background: #eae7dc;
+    --background: #fff;
     --foreground: #1a051d;
 
-    --primary: #eae7dc;
-    --primary-light: #eae7dc;
-    --primary-dark: #eae7dc;
+    --primary: #d5f0ee;
+    --primary-light: #ebfffd;
+    --primary-dark: #d5f0ee;
 
-    --secondary: #0a6453;
-    --secondary-light: #0a6453;
-    --secondary-dark: #0a6453;
+    --secondary: #0c796e;
+    --secondary-light: #4fa493;
+    --secondary-dark: #0f8277;
 
     --success: #0f2b31;
     --success-light: #e7eaea;
@@ -47,6 +47,8 @@ body {
     --color-gray-200: #b9b9b9;
     --color-gray-250: #707070;
     --color-gray-300: #6c6e70;
+
+    --color-yellow-50: #fbcc23;
   }
 
   .dark {
@@ -76,6 +78,8 @@ body {
     --color-black-150: #212121;
     --color-black-200: #252525;
     --color-black-250: #333333;
+
+    --color-yellow-50: #fbcc23;
   }
 }
 
@@ -90,7 +94,7 @@ body {
   .section-b-padding {
     @apply pb-[12px] sm:pb-[24px]  md:pb-[32px] lg:pb-[40px] xl:pb-[48px] 2xl:pb-[66px];
   }
-  .section-b-padding {
+  .section-t-padding {
     @apply pt-[12px] sm:pt-[24px]  md:pt-[32px] lg:pt-[40px] xl:pt-[48px] 2xl:pt-[66px];
   }
   .section-x-padding {

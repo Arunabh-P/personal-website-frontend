@@ -15,7 +15,7 @@ const Timeline: FC<TimelineProps> = ({ data }) => (
   <ol className="relative border-s border-black ">
     {data.map((item, index) => (
       <li key={index} className="mb-5 ms-6">
-        <span className="absolute flex items-center justify-center w-6 h-6 bg-primary border-primary rounded-full border-[.5px]  -start-3 ring-8 ring-primary">
+        <span className="absolute flex items-center justify-center w-6 h-6 bg-white border-white rounded-full border-[.5px]  -start-3 ring-8 ring-white">
           <Image
             src={
               item.isWork

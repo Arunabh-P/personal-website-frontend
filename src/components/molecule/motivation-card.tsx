@@ -11,7 +11,7 @@ const MotivationCard: FC<CardProps> = ({ index, title, description }) => (
       {index}
     </h2>
     <h6 className="font-bold uppercase mt-1">{title}</h6>
-    <p className="mt-2">{description}</p>
+    <p className="mt-2 text-justify">{description}</p>
   </div>
 );
 
