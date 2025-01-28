@@ -1,14 +1,8 @@
+import { TestimonialDto } from '@/types/testimonial';
 import Image from 'next/image';
 import { FC, useState } from 'react';
 
-interface TestimonialProps {
-  image: string;
-  name: string;
-  company: string;
-  quote: string;
-}
-
-export const TestimonialCard: FC<TestimonialProps> = ({
+export const TestimonialCard: FC<TestimonialDto> = ({
   image,
   name,
   company,
