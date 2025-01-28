@@ -1,11 +1,7 @@
+import { SkillDto } from '@/types/skill';
 import { FC } from 'react';
 
-interface CardProps {
-  index: string;
-  title: string;
-  description: string;
-}
-const MotivationCard: FC<CardProps> = ({ index, title, description }) => (
+const SkillCard: FC<SkillDto> = ({ index, title, description }) => (
   <div className="">
     <h2 className="text-[34px] md:text-[38px] lg:text-[44px] xltext-[54px] font-bold">
       {index}
@@ -15,4 +11,4 @@ const MotivationCard: FC<CardProps> = ({ index, title, description }) => (
   </div>
 );
 
-export default MotivationCard;
+export default SkillCard;

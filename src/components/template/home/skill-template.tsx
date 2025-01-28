@@ -1,25 +1,27 @@
-import React from 'react';
+import React, { FC } from 'react';
 import Image from 'next/image';
-import { skills } from '@/constants/home/skill';
-
-const SkillTemplate = () => (
+import { SkillDto } from '@/types/software-skill';
+interface SkillProps {
+  data: SkillDto[];
+}
+const SkillTemplate: FC<SkillProps> = ({ data }) => (
   <div className="overflow-hidden  h-[15vh] flex items-center ">
     <div className="animate-scroll gap-[50px] hidden md:flex">
-      {skills.map((data, index) => (
+      {data.map((item, index) => (
         <Image
           key={index}
-          src={data.icon}
-          alt={data.altText}
+          src={item.icon}
+          alt={item.altText}
           width={50}
           height={50}
           priority
         />
       ))}
-      {skills.map((data, index) => (
+      {data.map((item, index) => (
         <Image
           key={index}
-          src={data.icon}
-          alt={data.altText}
+          src={item.icon}
+          alt={item.altText}
           width={50}
           height={50}
           priority
@@ -27,21 +29,21 @@ const SkillTemplate = () => (
       ))}
     </div>
     <div className="flex animate-scroll gap-[50px] md:hidden">
-      {skills.map((data, index) => (
+      {data.map((item, index) => (
         <Image
           key={index}
-          src={data.icon}
-          alt={data.altText}
+          src={item.icon}
+          alt={item.altText}
           width={40}
           height={40}
           priority
         />
       ))}
-      {skills.map((data, index) => (
+      {data.map((item, index) => (
         <Image
           key={index}
-          src={data.icon}
-          alt={data.altText}
+          src={item.icon}
+          alt={item.altText}
           width={40}
           height={40}
           priority
